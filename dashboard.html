@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>UP LOTTERY KING 👑</h1>
+
+<h3 id="balance">Balance: ₹0</h3>
+
+<h2>Select Numbers</h2>
+<input type="number" id="num1" min="0" max="99" placeholder="00-99">
+<input type="number" id="num2" min="0" max="99" placeholder="00-99">
+
+<button onclick="placeBet()">Place Bet ₹50</button>
+
+<h2>Recharge</h2>
+<img src="qr.png" width="200"><br><br>
+
+<input type="text" id="utr" placeholder="Enter UTR Number"><br>
+<button onclick="submitRecharge()">Submit Recharge</button>
+
+<script type="module" src="app.js"></script>
+
+<script>
+setTimeout(() => {
+  loadBalance();
+}, 1000);
+</script>
+
+</body>
+</html>
